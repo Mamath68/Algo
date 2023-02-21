@@ -1,0 +1,21 @@
+<title>Exo 9 : Algo/php</title>
+
+<h1>Exercice 9</h1>
+<p>Nous souhaitons savoir si une personne est imposable en fonction de son âge et de son sexe.
+    Si la personne est une femme dont l’âge est compris entre 18 et 35 ans ou si c’est un homme de plus de 20 ans, alors
+    celle-ci est imposable (sinon ce n’est pas le cas, « non imposable »).</p>
+
+<?php
+
+$sex = "H";
+$age = 20;
+
+if ($sex == "F" && $age >= 18 && $age <= 35) {
+    $resultat = "Imposable";
+} else
+    if ($sex == "H" && $age >= 20) {
+        $resultat = "Imposable";
+    } else {
+                $resultat = "non imposable";
+            }
+echo "<h2>La personne de sex $sex et âgé(e) de $age ans est $resultat<h2>";
