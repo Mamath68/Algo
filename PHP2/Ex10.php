@@ -48,9 +48,9 @@ function afficherRadio($nomsFormation)
     echo "</form>";
 }
 
-echo "<input type='submit' name='submit' id='submit'>"
+echo "<input type='submit' value='Envoyer'>";
 
-    ?>
+?>
 
 <style>
     body {
