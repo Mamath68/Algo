@@ -1,6 +1,6 @@
 <title>Exo 9 : Algo/php</title>";
 
-<h1>Exercice 9:</h1>
+<h1><u>Exercice 9:</u></h1>
 <p>
     Créer une fonction personnalisée permettant d'afficher des boutons radio avec un tableau de valeurs en paramètre
     ("Monsieur", "Madame", "Mademoiselle").

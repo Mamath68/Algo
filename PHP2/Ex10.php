@@ -1,6 +1,6 @@
 <title>Exo 10 : Algo/php</title>
 
-<h2>Exercice 10:</h2>
+<h1><u>Exercice 10:</u></h1>
 <p>
     En utilisant l’ensemble des fonctions personnalisées crées précédemment, créer un formulaire complet qui contient
     les informations suivantes : <br>
