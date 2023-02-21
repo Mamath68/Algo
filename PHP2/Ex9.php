@@ -1,6 +1,6 @@
 <title>Exo 9 : Algo/php</title>";
 
-<h2>Exercice 9:</h2>
+<h1>Exercice 9:</h1>
 <p>
     Créer une fonction personnalisée permettant d'afficher des boutons radio avec un tableau de valeurs en paramètre
     ("Monsieur", "Madame", "Mademoiselle").
@@ -22,3 +22,18 @@ function afficherRadio($nomsRadio)
     echo "</form>";
 }
 ?>
+
+<style>
+    body {
+        margin-left: 100px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        background-color: cadetblue;
+        width: 210px;
+    }
+</style>

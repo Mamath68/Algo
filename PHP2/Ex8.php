@@ -1,6 +1,6 @@
-<title>Exo 8 : Algo/php</title>";
+<title>Exo 8 : Algo/php</title>
 
-<h2><u>Exercice 8:</u></h2>
+<h1><u>Exercice 8:</u></h1>
 <p>
     Soit l'URL suivante: <span>https://my.mobirise.com/data/userpic/764.jpg</span>
     <br>
@@ -30,14 +30,5 @@ function repeterImage($url, $x)
 
     h1 {
         text-align: center;
-    }
-
-    span {
-        color: olive;
-    }
-
-    form {
-        background-color: cadetblue;
-        width: 210px;
     }
 </style>

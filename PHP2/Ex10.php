@@ -1,4 +1,4 @@
-<title>Exo 10 : Algo/php</title>";
+<title>Exo 10 : Algo/php</title>
 
 <h2>Exercice 10:</h2>
 <p>

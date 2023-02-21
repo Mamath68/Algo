@@ -1,6 +1,6 @@
 <title>Exo 6 : Algo/php</title>
 
-<h2><u>Exercice 6:</u></h2>
+<h1><u>Exercice 6:</u></h1>
 <p>
     Créer une fonction personnalisée permettant de remplir une liste déroulante à partir d'un tableau
     <br>
@@ -30,10 +30,6 @@ function alimenterListeDeroulante($elements)
 
     h1 {
         text-align: center;
-    }
-
-    span {
-        color: olive;
     }
 
     form {

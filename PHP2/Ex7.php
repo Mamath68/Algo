@@ -1,6 +1,6 @@
 <title>Exo 7 : Algo/php</title>
 
-<h2><u>Exercice 7:</u></h2>
+<h1><u>Exercice 7:</u></h1>
 <p>
     Créer une fonction personnalisée permettant de générer des cases à cocher. On pourra préciser
     <br>
@@ -20,7 +20,7 @@ function genererCheckbox($elements)
 {
     echo "<form><fieldset>";
     foreach ($elements as $el => $e) {
-        echo "<input type='checkbox'>" . $el . "<br>";
+        echo "<input type='checkbox' name='checkbox'>" . $el . "<br>";
     }
     echo "</fieldset></form>";
 }
@@ -32,10 +32,6 @@ function genererCheckbox($elements)
 
     h1 {
         text-align: center;
-    }
-
-    span {
-        color: olive;
     }
 
     form {

@@ -1,6 +1,6 @@
 <title>Exo 2 : Algo/php</title>
 
-<h2><u>Exercice 2:</u></h2>
+<h1><u>Exercice 2:</u></h1>
 <p>
         Soit le tableau suivant:
         <br>

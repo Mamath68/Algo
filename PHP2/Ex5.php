@@ -1,6 +1,6 @@
 <title>Exo 5 : Algo/php</title>
 
-<h2><u>Exercice 5:</u></h2>
+<h1><u>Exercice 5:</u></h1>
 <p>
     Créer une fonction personnalisée permettant de créer un formullaire de champs de texte en
     <br>
@@ -30,10 +30,6 @@ function afficherInput($nomsInput)
 
     h1 {
         text-align: center;
-    }
-
-    span {
-        color: olive;
     }
 
     form {

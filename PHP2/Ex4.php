@@ -1,6 +1,6 @@
 <title>Exo 4 : Algo/php</title>
 
-<h2><u>Exercice 4:</u></h2>
+<h1><u>Exercice 4:</u></h1>
 <p>
     A partir de l'exercice 2, ajouter une colonne supplémentaire dans le tableau HTML qui contiendra
     <br>
@@ -41,11 +41,6 @@ echo "</table>";
     h1 {
         text-align: center;
     }
-
-    span {
-        color: olive;
-    }
-
 
     table,
     td,
