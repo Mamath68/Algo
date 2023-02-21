@@ -1,6 +1,6 @@
-<title>Exo 1 : Algo/php</title>";
+<title>Exo 1 : Algo/php</title>
 
-<h2><u>Exercice 1:</u></h2>
+<h1><u>Exercice 1:</u></h1>
 <p>
     Créer une fonction personnalisée <code>convertirMajRouge()</code> permettant de transformer
     <br> une chaîne de
@@ -17,3 +17,13 @@
         echo "<br><p style ='color:red'>" . mb_strtoupper($texte) . "</p> <br>";
     }
     ?>
+
+    <style>
+        body {
+            margin-left: 100px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>

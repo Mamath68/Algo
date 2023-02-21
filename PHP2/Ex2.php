@@ -1,4 +1,4 @@
-<title>Exo 2 : Algo/php</title>";
+<title>Exo 2 : Algo/php</title>
 
 <h2><u>Exercice 2:</u></h2>
 <p>
@@ -56,6 +56,3 @@ function afficherTableHTML($capitales)
         font-weight: bold;
     }
 </style>
-</body>
-
-</html>

@@ -1,4 +1,4 @@
-<title>Exo 4 : Algo/php</title>";
+<title>Exo 4 : Algo/php</title>
 
 <h2><u>Exercice 4:</u></h2>
 <p>
@@ -46,7 +46,7 @@ echo "</table>";
         color: olive;
     }
 
-    /* met en forme le tableau d'une bordure */
+
     table,
     td,
     th {
@@ -61,6 +61,3 @@ echo "</table>";
         font-weight: bold;
     }
 </style>
-</body>
-
-</html>
