@@ -2,7 +2,8 @@
 
 <h2><u>Exercice 1:</u></h2>
 <p>
-    Créer une fonction personnalisée <code>convertirMajRouge()</code> permettant de transformer une chaîne de
+    Créer une fonction personnalisée <code>convertirMajRouge()</code> permettant de transformer
+    <br> une chaîne de
     <br>
     caractère passée en argument en majuscules et en rouge.
     <br><br>
