@@ -26,39 +26,13 @@
 </figure>
 
 <?php
+include('voiture.php');
 
-class Voiture
-{
-    // Properties
-    public $marque;
-    public $modele;
-    public $nbPortes;
-    public $vitesseActuelle;
+$p1 = new Voiture("Peugeot", "408",5);
+$p2 = new Voiture("Citroën","C4",3);
 
-    // Methods
-    function set_name($marque)
-    {
-        $this->marque = $marque;
-    }
-    function get_name()
-    {
-        return $this->marque;
-    }
-}
-
-// Voiture::demarrer();
-// Voiture::accelerer();
-// Voiture::stopper();
-$peugeot = new voiture();
-$citroen = new voiture();
-
-
-$peugeot->set_name('Peugeot');
-$citroen->set_name('Citroën');
-
-echo $peugeot->get_name();
-echo "<br>";
-echo $citroen->get_name();
+echo $v1."<br>";
+echo $v2."<br>";
 
 ?>
 
