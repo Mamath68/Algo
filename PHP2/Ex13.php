@@ -28,13 +28,15 @@
 <?php
 include('voiture.php');
 
-$p1 = new Voiture("Peugeot", "408",5);
-$p2 = new Voiture("Citroën","C4",3);
+$v1 = new Voiture("Peugeot", "408", 5);
+$v2 = new Voiture("Citroën", "C4", 3);
+$v1 -> accellerer(50);
 
-echo $v1."<br>";
-echo $v2."<br>";
+// echo $v1->getVitesseActuelle()."km/h";
+echo $v1 . "<br>".$v2."<br>";
 
-?>
+
+    ?>
 
 <style>
     body {
@@ -52,5 +54,9 @@ echo $v2."<br>";
     .aligne {
         display: flex;
         list-style: none;
+    }
+
+    form {
+        display: flex;
     }
 </style>

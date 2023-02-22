@@ -1,7 +1,5 @@
-<?php
-
-class Voiture
-{
+<?php 
+class Voiture {
     private $marque;
     private $modele;
     private $nbPortes;
@@ -12,21 +10,7 @@ class Voiture
         $this->marque = $marque;
         $this->modele = $modele;
         $this->nbPortes = $nbPortes;
-        $this->vitesseActuelle = $vitesseActuelle = 0;
     }
-    public function demarrer()
-    {
-    }
-
-    public function stopper()
-    {
-    }
-
-    public function accellerer($vitesseAcceleration)
-    {
-        return $this->vitesseActuelle;
-    }
-
     public function getMarque()
     {
         return $this->marque;
@@ -61,6 +45,6 @@ class Voiture
     }
     public function __toString()
     {
-        return "Nom du véhicule : " . $this->marque . "<br> Modèle du véhicule : " . $this->modele . "<br> Nombre de porte : " . $this->nbPortes . "<br> Sa vitesse actuelle est de " . $this->vitesseActuelle . " KM/H <br>";
+        return $this->marque . " " . $this->modele . " ". $this->nbPortes . " " . $this-> vitesseActuelle . "";
     }
 }

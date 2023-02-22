@@ -1,15 +1,16 @@
 <?php
+
 class Personne
 {
     private $nom;
     private $prenom;
-    private DateTime $dateNaissance;
+    private $dateNaissance;
 
     public function __construct($nom, $prenom, $dateNaissance)
     {
         $this->nom = $nom;
         $this->prenom = $prenom;
-        $this->dateNaissance = new DateTime ($dateNaissance);
+        $this->dateNaissance = $dateNaissance;
     }
     public function getNom()
     {
@@ -34,9 +35,5 @@ class Personne
     public function setDateNaissance($dateNaissance)
     {
         $this->dateNaissance = $dateNaissance;
-    }
-    public function __toString()
-    {
-        return "Je m'appel(le) " . $this->nom . " " . $this->prenom . " " . "Et je suis né(e) le : " . $this->dateNaissance->format('d-m-Y');
     }
 }
