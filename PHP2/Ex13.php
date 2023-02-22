@@ -27,8 +27,6 @@
 
 <?php
 
-
-
 class Voiture
 {
     // Properties
