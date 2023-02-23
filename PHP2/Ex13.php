@@ -30,13 +30,10 @@ include('voiture.php');
 
 $v1 = new Voiture("Peugeot", "408", 5);
 $v2 = new Voiture("Citroën", "C4", 3);
-$v1 -> accellerer(50);
+$v1->accelerer(50);
 
-// echo $v1->getVitesseActuelle()."km/h";
-echo $v1 . "<br>".$v2."<br>";
-
-
-    ?>
+echo $v1 . "<br>" . $v2 . "<br>";
+?>
 
 <style>
     body {
