@@ -27,11 +27,18 @@
 
 <?php
 include('voiture.php');
-
+// Nouvel objet dans la class voiture
 $v1 = new Voiture("Peugeot", "408", 5);
 $v2 = new Voiture("Citroën", "C4", 3);
+// Raccord de la fonction acclerer a V1
 $v1->accelerer(50);
+// Raccord de la fonction demarrer a V1
+$v1->demarrer();
+// Raccord de la fonction stop a V2
+$v2->stop();
 
+
+// echo de $v1 et $v2
 echo $v1 . "<br>" . $v2 . "<br>";
 ?>
 
