@@ -16,12 +16,15 @@
 <?php
 include('voiture2.php');
 
-$v1 = new Voiture("Peugeot", "408", 5);
-$v2 = new Voiture("Citroën", "C4", 3);
+// $v1 = new Voiture("Peugeot", "408");
+// $ve1 = new VoiturElec("BMW", "I3", 100);
 
-echo $v1 . "<br>";
-echo $v2 . "<br>";
+// Raccord de la fonction acclerer a V1
+$ve1->autonomie(100);
 
+
+// echo de $v1 et $v2
+echo $v1 . "<br>" . $ve1 . "<br>";
 ?>
 
 <style>
@@ -31,14 +34,5 @@ echo $v2 . "<br>";
 
     h1 {
         text-align: center;
-    }
-
-    .simov {
-        width: 245px;
-    }
-
-    .aligne {
-        display: flex;
-        list-style: none;
     }
 </style>

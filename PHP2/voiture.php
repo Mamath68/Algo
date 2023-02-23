@@ -1,5 +1,6 @@
 <?php
-// Class: Groupement de fonction associé a un objet(Voiture dans le cas actuel)
+// Class: Groupement de code (propriété/fonction) qui permettent de creer des objets ($v1 et $v2)
+// L'Encapsulation permet d'enfermer dans une capsule les données brute afin d'éviter les erreurs de manipulation ou de corruption des données.
 class Voiture
 {
     // Private : Element accesible uniquement a l'interrieur de la class. elle ne peut donc pas etre récupéré en dehors.
@@ -8,10 +9,11 @@ class Voiture
     private $nbPortes;
     private $vitesseActuelle;
     private $etat;
-    // Public : Element accesible de partout, sur le site ou application, et donc modifiable par l'utilisateur.
+    // Public : Element accesible de partout, sur le site ou application.
+    // protected : uniquement les enfants d'une class y ont accès.
 
     // __construct : fonction magique regroupant toutes les méthodes préexistantes qu’une classe peut implémenter. Elle sera appelée lorsqu’un évènement particulier se produira au sein d’une classe.
-    public function __construct($marque, $modele, $nbPortes)
+    public function __construct($marque, $modele, $nbPortes, $etat = false)
     {
         // Marque du vehicule
         $this->marque = $marque;
@@ -22,7 +24,7 @@ class Voiture
         // Vitesse du vehicule
         $this->vitesseActuelle = 0;
         // Etat du vehicule (demarrer / a l'arret)
-        $this->etat = false;
+        $this->etat = $etat;
     }
     // function : une fonction regroupe des actions a effectuer, attribué a un objet.
     public function getMarque()
@@ -44,6 +46,15 @@ class Voiture
         // la valeur $this equivaut a vitesseActuelle
         return $this->vitesseActuelle;
     }
+
+    public function getEtat()
+    {
+        if ($this->etat === false) {
+            return "à l'arret";
+        } else {
+            return "demarré";
+        }
+    }
     // Un mutateur (setter) est une méthode qui permettra la modification d'un attribut, et uniquement cela (en d'autres termes, elle ne renvoie aucune information).Cette méthode porte par convention le préfixe set
     public function setMarque($marque)
     {
@@ -64,21 +75,35 @@ class Voiture
     }
     public function demarrer()
     {
-        $this->etat = 'Allumé';
+        if ($this->etat == false) {
+            $this->etat = true;
+            return "la voiture " . $this->marque . " " .$this->modele . " démarre";
+        } else {
+            return "demarré";
+        }
     }
-    public function accelerer($vitesseAcceleration)
-    { //pour obtenir la vitesse d'acceleration, j'additionne la vitesse actuelle avec elle-même.
-        $this->vitesseActuelle += $vitesseAcceleration;
+    public function accelerer($vitesseAcceleration) { //pour obtenir la vitesse d'acceleration, j'additionne la vitesse actuelle avec elle-même.
+        if ($this->etat == true) {
+            $this->vitesseActuelle += $vitesseAcceleration;
+            return "la voiture " . $this->marque . " " .$this->modele . " accélère de " .$vitesseAcceleration . " KM/H";
+        } else {      
+        return "la voiture " . $this->marque . " " .$this->modele . " veut accélérer de " .$vitesseAcceleration;
+        }
     }
 
     public function stop()
     {
-        $this->etat = "à l'arret";
+        if ($this->etat == true) {
+            $this->etat = false;
+            return "la voiture " . $this->marque . " " .$this->modele . " est stoppé";
+        } else {
+            echo "à l'arret";
+        }
     }
-    // La fonction__toString() retourne l'élement en chaine de caractère.
+    // La fonction__toString() retourne l'objet en chaine de caractère.
     public function __toString()
     {
-        // Retourne : le nom du vehicule "Peugeot / citroën" retour a la ligne ; le modèle du véhicule : "408/C4" Retpir a la ligne ; Nombre de porte "5/3" retour a la ligne; Le Véhicule "Peugeot / citroën" est "Démarré / à l'arrêt" Retour a la ligne ; Sa vitesse actuelle est de "50(Peugeot)/0(C4)" km/h; Retour a la ligne;
-        return "Nom du véhicule : " . $this->marque . "<br> Modèle du véhicule : " . $this->modele . "<br> Nombre de porte : " . $this->nbPortes . "<br>" . "Le Vehicule " . $this->marque . " est " . $this->etat . "<br> Sa vitesse actuelle est de : " . $this->vitesseActuelle . " KM/H <br>";
+        // Retourne : le nom et modèle du vehicule "Peugeot 408 / citroën C4" retour a la ligne ;" Retour a la ligne ; Nombre de porte "5/3" retour a la ligne; Le Véhicule "Peugeot / citroën" est "Démarré / à l'arrêt" Retour a la ligne ; Sa vitesse actuelle est de "50/0" km/h; Retour a la ligne;
+        return "Nom et modèle du véhicule : " . $this->marque . " " . $this->modele . "<br> Nombre de portes : " . $this->nbPortes . "<br>" . "Le Vehicule " . $this->marque . " est " . $this->getEtat() . "<br> Sa vitesse actuelle est de : " . $this->vitesseActuelle . " KM/H <br>";
     }
 }
