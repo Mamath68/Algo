@@ -60,6 +60,7 @@ class Voiture
 
     public function stop()
     {
+
     }
 
     public function __toString()
