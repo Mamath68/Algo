@@ -16,13 +16,11 @@
 
 <?php
 include('voiture2.php');
-// Nouvel objet dans la class voiture
 $v1 = new Voiture("Peugeot", "408");
 $ve1 = new VoitureElec("BMW", "I3", 150);
 
-// echo de $v1 et $v2
 echo $v1->getInfo() . "<br>";
-echo $ve1->getinfo(). "<br>";
+echo $ve1->getinfo() . "<br>";
 ?>
 
 <style>
