@@ -54,6 +54,6 @@ class VoitureElec extends Voiture
     }
     public function getInfo()
     {
-        echo "Le Vehicule : " . $this->marque . " " . $this->modele . " à " . $this->autonomie . " KM d'autonomie";
+        echo parent::getInfo(). " à " . $this->autonomie . " KM d'autonomie";
     }
 }
