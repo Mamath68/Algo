@@ -87,7 +87,8 @@ class Voiture
             $this->vitesseActuelle += $vitesseAcceleration;
             return "Le Véhicule " . $this->marque . " " .$this->modele . " accélère de " .$vitesseAcceleration . " KM/H";
         } else {      
-        return "Le Véhicule " . $this->marque . " " .$this->modele . " veut accélérer de " .$vitesseAcceleration;
+        return "Le Véhicule " . $this->marque . " " .$this->modele . " veut accélérer de " .$vitesseAcceleration. "<br>"
+        ."Pour accelerer, il faut demarrer le Vehicule " .$this->getMarque(). " " . $this->getModele();
         }
     }
 
