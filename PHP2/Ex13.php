@@ -40,7 +40,8 @@ $v1->accelerer(0) . "<br>";
 // Raccord de la fonction stop a $V2
 $v2->stop();
 // echo de $v1 et $v2
-echo $v1 . "<br>" . $v2 . "<br>";
+echo "Infos Véhicule 1<br>**************<br>" .$v1 . "<br>";
+echo "Infos Véhicule 2<br>**************<br>" .$v2 . "<br>";
 echo $v2->demarrer() . "<br>";
 echo $v2->stop() . "<br>";
 echo $v2->accelerer(20) . "<br>";

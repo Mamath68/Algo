@@ -77,7 +77,7 @@ class Voiture
     {
         if ($this->etat == false) {
             $this->etat = true;
-            return "la voiture " . $this->marque . " " .$this->modele . " démarre";
+            return "Le Véhicule " . $this->marque . " " .$this->modele . " démarre";
         } else {
             return "demarré";
         }
@@ -85,9 +85,9 @@ class Voiture
     public function accelerer($vitesseAcceleration) { //pour obtenir la vitesse d'acceleration, j'additionne la vitesse actuelle avec elle-même.
         if ($this->etat == true) {
             $this->vitesseActuelle += $vitesseAcceleration;
-            return "la voiture " . $this->marque . " " .$this->modele . " accélère de " .$vitesseAcceleration . " KM/H";
+            return "Le Véhicule " . $this->marque . " " .$this->modele . " accélère de " .$vitesseAcceleration . " KM/H";
         } else {      
-        return "la voiture " . $this->marque . " " .$this->modele . " veut accélérer de " .$vitesseAcceleration;
+        return "Le Véhicule " . $this->marque . " " .$this->modele . " veut accélérer de " .$vitesseAcceleration;
         }
     }
 
@@ -95,7 +95,7 @@ class Voiture
     {
         if ($this->etat == true) {
             $this->etat = false;
-            return "la voiture " . $this->marque . " " .$this->modele . " est stoppé";
+            return "Le Véhicule " . $this->marque . " " .$this->modele . " est stoppé";
         } else {
             echo "à l'arret";
         }
