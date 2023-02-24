@@ -45,6 +45,8 @@ echo "Infos Véhicule 2<br>**************<br>" .$v2 . "<br>";
 echo $v2->demarrer() . "<br>";
 echo $v2->stop() . "<br>";
 echo $v2->accelerer(20) . "<br>";
+echo "La Vitesse du Vehicule " . $v1->getMarque() . " " .$v1->getModele() . " est de : " .$v1->getVitesseActuelle(). " KM/H <br>";
+echo "La Vitesse du Vehicule " . $v2->getMarque() . " " .$v2->getModele() . " est de : " .$v2->getVitesseActuelle(). " KM/H <br>";
 ?>
 
 <style>

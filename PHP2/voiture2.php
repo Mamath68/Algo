@@ -1,15 +1,15 @@
 <?php
 class Voiture
 {
-   
+
     protected $marque;
     protected $modele;
-   
+
 
     public function __construct($marque, $modele)
     {
         $this->marque = $marque;
-        
+
         $this->modele = $modele;
     }
     public function getMarque()
@@ -20,7 +20,7 @@ class Voiture
     {
         return $this->modele;
     }
-    
+
     public function setMarque($marque)
     {
         $this->marque = $marque;
